@@ -32,5 +32,7 @@ task dist(type: Jar) {
 }
 
 tasks.withType(JavaCompile) {
-    options.compilerArgs += ["--release", "7"]
+    // trevor: Had to comment this out to run my game?
+    // TODO: Uncomment before I submit a PR
+    // options.compilerArgs += ["--release", "7"]
 }
